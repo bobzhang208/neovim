@@ -8,3 +8,4 @@ require('config.nvim-tree')
 require('config.bufferline')
 require('config.lualine')
 require('config.cpp')
+vim.opt.relativenumber = false
