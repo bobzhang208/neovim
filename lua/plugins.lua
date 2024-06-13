@@ -76,6 +76,18 @@ require("lazy").setup({
     config = true
     -- use opts = {} for passing setup options
     -- this is equalent to setup({}) function
+    },
+    "mfussenegger/nvim-dap",
+    "rcarriga/nvim-dap-ui",
+    "theHamsta/nvim-dap-virtual-text",
+    'nvim-neotest/nvim-nio',
+    {
+"simrat39/symbols-outline.nvim",
+    lazy = true,
+    cmd = { "SymbolsOutline", "SymbolsOutlineOpen", "SymbolsOutlineClose" },
+    config = function()
+        require("config.outlines")
+   end,
 },
 
 })
