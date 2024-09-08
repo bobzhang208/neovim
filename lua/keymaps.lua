@@ -38,6 +38,11 @@ vim.keymap.set("n", "<C-l>", ":BufferLineCycleNext<CR>", opt)
 vim.keymap.set("n", "<C-p>", ":Telescope find_files<CR>", opt)
 vim.keymap.set("n", "<C-f>", ":Telescope live_grep<CR>", opt)
 
+-- split window
+vim.api.nvim_set_keymap('n', '<C-m>', ':vsp<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-n>', ':split<CR>', { noremap = true, silent = true })
+
+
 -- terminal
 vim.api.nvim_set_keymap('n', '<Leader>th', ':split | terminal<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<Leader>tv', ':vsplit | terminal<CR>', { noremap = true, silent = true })
